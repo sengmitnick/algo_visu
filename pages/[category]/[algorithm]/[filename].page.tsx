@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async function (context) {
   };
 };
 
-export default () => {
+const Index = () => {
   const router = useRouter();
   const [speed, setSpeed] = useState(2);
   const [cursor, setCursor, getCursor] = useGetState(0);
@@ -180,3 +180,5 @@ export default () => {
     </div>
   );
 };
+
+export default Index;
